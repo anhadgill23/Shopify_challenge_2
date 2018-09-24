@@ -52,7 +52,6 @@ product3 = shop2.products.create(
     :total_in_stock => 5
 )
 
-
 ## LINE_ITEMS
 
 puts "Creating Line Items ..."
@@ -64,10 +63,21 @@ line_item1 = LineItem.create!(
   order_id: 1
 )
 
+line_item2 = LineItem.create!(
+    quantity: 3,
+    total: 230,
+    product_id: 2,
+    order_id: 1
+)
+
 ## ORDERS
 
 puts "Adding Orders ..."
 
 order1 = Order.create!(
-    sub_total: 200
-  )
+    sub_total: 1150
+)
+
+puts "Done."
+
+

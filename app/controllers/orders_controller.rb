@@ -12,8 +12,7 @@ class OrdersController < ApplicationController
     end
 
     def create
-        @order.sub_total = ListItems.where(:order_id => :id).sum
-        @order.order_date = Date.today
+        @order_sum = Order.list_items(:order_id).count
         if @order.valid?
             redirect_to @shops
         end

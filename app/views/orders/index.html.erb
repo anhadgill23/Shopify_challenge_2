@@ -1,0 +1,18 @@
+<h1>Orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub-total</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+        <td><%= order.sub_total %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
