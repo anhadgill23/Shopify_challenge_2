@@ -18,7 +18,7 @@ shop1.save!
 shop2 = Shop.new(
     :name => 'Abercrombie', 
     :address => '701 W Georgia St', 
-    :phone => '7788880104'
+    :phone => '6048880114'
 )
 
 shop2.save!
