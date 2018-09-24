@@ -14,6 +14,6 @@
   <strong>Phone:</strong>
   <%= @shop.phone %>
 </p>
-
+<%= link_to 'Products', shop_products_path(@shop) %> |
 <%= link_to 'Edit', edit_shop_path(@shop) %> |
 <%= link_to 'Back', shops_path %>
