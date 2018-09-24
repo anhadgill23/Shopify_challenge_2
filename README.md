@@ -1,6 +1,6 @@
 # SHOPIFY_CHALLENGE
 
-This is the shopify challenge to create a backend API.
+This is the shopify challenge to create a backend API. I created minimal front end with it for demonstation purposes.
 
 ## Prerequisites
 
@@ -19,4 +19,4 @@ Rails version: 5.2.1
 
 ## Demo
 
-The purpose of this exercise is to create databases with the right relationships between them. Shops have many products, products have many line items, many line items have orders and shops have many orders. 
+The purpose of this exercise is to create databases with the right relationships between them. Shops have many products, products have many line items, orders have many line items and shops have many orders. 
