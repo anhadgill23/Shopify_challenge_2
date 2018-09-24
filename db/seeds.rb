@@ -60,9 +60,9 @@ product3.save!
 
 puts "Creating Line Items ..."
 
-line_item1 = LineItem.create!(
-  quantity: 2,
-  total: 230
-)
+# line_item1 = LineItem.create!(
+#   quantity: 2,
+#   total: 230
+# )
 
-line_item1.save
+# line_item1.save

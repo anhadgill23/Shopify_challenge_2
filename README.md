@@ -3,6 +3,7 @@
 This is the shopify challenge to create a backend API.
 
 ## Prerequisites
+
 Ruby version: 2.5.1
 Rails version: 5.2.1
 
@@ -15,3 +16,7 @@ Rails version: 5.2.1
 5. Run `rake db:seed` to seed data.
 6. Use `rails server` command to start the app.
 7. Visit http://localhost:4000.
+
+## Demo
+
+The purpose of this exercise is to create databases with the right relationships between them. Shops have many products, products have many line items, many line items have orders and shops have many orders. 
