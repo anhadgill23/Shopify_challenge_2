@@ -1,24 +1,18 @@
-# README
+# SHOPIFY_CHALLENGE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the shopify challenge to create a backend API that fulfils certain functions.
 
-Things you may want to cover:
 
-* Ruby version
+## Prerequisites
+Ruby version: 2.5.1
+Rails version: 5.2.1
 
-* System dependencies
+## Getting Started
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone this reposirory on your local machine.
+2. Run `bundle install` to install dependencies.
+3. Run `rake db:create && rake db:schema:load` to create and load db.
+4. Run `rails db:migrate` to migrate the database.
+5. Run `rake db:seed` to seed data.
+6. Use `rails server` command to start the app.
+7. Visit http://localhost:4000.
