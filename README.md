@@ -1,4 +1,4 @@
-# SHOPIFY CHALLENGE
+# Shopify Challenge
 
 This is the shopify challenge to create a backend API. A minimal front end is created for demonstation purposes.
 
