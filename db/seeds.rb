@@ -29,14 +29,12 @@ Product.destroy_all
 
 puts "Re-creating Products ..."
 
-product1 = shop1.products.new(
+product1 = shop1.products.create(
     :name => 'Air', 
     :unit_price => 100, 
     :category => 'shoes',
     :total_in_stock => 7
 )
-
-product1.save!
 
 product2 = shop1.products.create(
     :name => 'Running', 
@@ -54,15 +52,22 @@ product3 = shop2.products.create(
     :total_in_stock => 5
 )
 
-product3.save!
 
 ## LINE_ITEMS
 
 puts "Creating Line Items ..."
 
-# line_item1 = LineItem.create!(
-#   quantity: 2,
-#   total: 230
-# )
+line_item1 = LineItem.create!(
+  quantity: 2,
+  total: 230,
+  product_id: 1,
+  order_id: 1
+)
 
-# line_item1.save
+## ORDERS
+
+puts "Adding Orders ..."
+
+order1 = Order.create!(
+    sub_total: 200
+  )
