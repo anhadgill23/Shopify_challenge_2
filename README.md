@@ -1,7 +1,6 @@
 # SHOPIFY_CHALLENGE
 
-This is the shopify challenge to create a backend API that fulfils certain functions.
-
+This is the shopify challenge to create a backend API.
 
 ## Prerequisites
 Ruby version: 2.5.1
