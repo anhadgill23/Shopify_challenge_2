@@ -15,7 +15,7 @@ Rails version: 5.2.1
 4. Run `rails db:migrate` to migrate the database.
 5. Run `rake db:seed` to seed data.
 6. Use `rails server` command to start the app.
-7. Visit http://localhost:4000.
+7. Visit http://localhost:4000/shops.
 
 ## Demo
 
