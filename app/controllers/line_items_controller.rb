@@ -20,10 +20,11 @@ class LineItemsController < ApplicationController
     else
         current_item = LineItem.create(product_id: product.id, order_id: 1, quantity: 1, total: product.unit_price)
         if current_item.valid?
-            redirect_to shop_products_path
+            redirect_to line_items_path
             puts 'LINE_ITEM is added.'
         else
             puts 'ERRRRROR'
+            redirect_to line_items_path
         end
     end
     current_item

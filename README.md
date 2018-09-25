@@ -23,5 +23,5 @@ The purpose of this exercise is to setup the endpoints and create databases with
 
 CRUD functions can be performed on shops and products. Products are nested resources inside shops. 
 
-To look at the line items, visit http://localhost:4000/line_items
+New items can be added to line items by going to the product show page and clicking on **Add to line items**. The list can be viewed at http://localhost:4000/line_items.
 To look at the final order, visit http://localhost:4000/orders
