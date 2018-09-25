@@ -3,17 +3,17 @@ class OrdersController < ApplicationController
         @orders = Order.all
     end
 
-    def new
-        @order = Order.new
-    end
-
     def create
-        @order_sum = Order.line_items(:order_id).count
+        sub_total = total_sum
+        @order = @order.new(sub_total: sub_total)
         if @order.valid?
-            redirect_to @shops
+            redirect_to orders
         end
         @order.save
     end
 
+    def total_sum
+        @order_sum = Order.line_items.find_where_order_id(order.id).sum
+    end
 
 end

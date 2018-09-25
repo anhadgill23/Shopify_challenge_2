@@ -7,7 +7,6 @@ class LineItemsController < ApplicationController
         @shop = Shop.find(params[:shop_id])
         @product = @shop.products.find(params[:product_id])
         add_product(@product)
-
     end
 
     def add_product(product)
