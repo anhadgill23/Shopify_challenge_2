@@ -1,0 +1,27 @@
+
+<h1>Item List</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Product_id</th>
+      <th>Quantity</th>
+      <th>Sub-total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @line_items.each do |line_item| %>
+      <tr>
+        <td><%= line_item.id %></td>
+        <td><%= line_item.product_id %></td>
+        <td><%= line_item.quantity %></td>
+        <td><%= line_item.total %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

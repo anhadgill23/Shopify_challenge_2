@@ -20,5 +20,6 @@
   <%= @product.total_in_stock %>
 </p>
 
+<%= link_to 'Add to line item', line_items_path(:shop_id => @shop, :product_id => @product), method: :post %> |
 <%= link_to 'Edit', edit_shop_product_path(@shop, @product) %> |
 <%= link_to 'Back', shop_products_path(@shop) %>

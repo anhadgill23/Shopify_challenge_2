@@ -4,7 +4,7 @@ This is the shopify challenge to create a backend API. A minimal front end is cr
 
 ## Prerequisites
 
-Ruby version: 2.5.1
+Ruby version: 2.5.1 
 Rails version: 5.2.1
 
 ## Getting Started

@@ -8,7 +8,7 @@ class OrdersController < ApplicationController
     end
 
     def create
-        @order_sum = Order.list_items(:order_id).count
+        @order_sum = Order.line_items(:order_id).count
         if @order.valid?
             redirect_to @shops
         end
