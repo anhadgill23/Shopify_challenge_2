@@ -1,6 +1,6 @@
 class Order < ApplicationRecord
     has_many :line_items
-
+    has_many :products, through: :line_items
     
     def self.total_sum
         order = Order.find_by(id: 1)
