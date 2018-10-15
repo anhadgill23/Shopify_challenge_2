@@ -42,7 +42,6 @@ class ProductsController < ApplicationController
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
-
     @product = @shop.products.find(params[:id])
 
     respond_to do |format|
