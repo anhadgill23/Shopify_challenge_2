@@ -19,9 +19,9 @@ Rails version: 5.2.1
 
 ## Demo
 
-The purpose of this exercise is to setup the endpoints and create databases with the right relationships between them. Shops have many products, products have many line items, orders have many line items and shops have many orders. 
+The purpose of this exercise is to setup the endpoints and create database tables with the right relationships between them. Shops have many products, products have many line items, orders have many line items and shops have many orders. 
 
 CRUD functions can be performed on shops and products. Products are nested resources inside shops. 
 
 New items can be added to line items by going to the product show page and clicking on **Add to line items**. The list can be viewed at http://localhost:4000/line_items.
-To look at the final order, visit http://localhost:4000/orders
+To look at the final order, visit http://localhost:4000/orders.
